@@ -1,0 +1,297 @@
+:root{
+  --first-color: #21272B;
+  --bg-color: #1A62E9;
+  --violet: #88A2E6;
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+  background-color: #fff;
+  color: var(--first-color);
+}
+
+ul{
+  list-style: none;
+}
+
+img{
+  max-width: 100%;
+}
+
+p{
+  line-height: 1.8rem;
+}
+
+/* utils */
+
+.container{
+  width: 99%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.d-flex{
+  display: flex;
+}
+
+.bg-grey{
+  background-color: #F6F6F6;
+}
+
+.mb-xl{
+  margin-bottom: 30px;
+}
+
+.mb-md{
+  margin-bottom: 20px;
+}
+
+.mb-xs{
+  margin-bottom: 10px;
+}
+
+.mr-md{
+  margin-right: 20px ;
+}
+
+.debug{
+  background-color: rgba(255,0,0,.2);
+  border: 1px solid black;
+}
+
+.debug div,
+.debug nav{
+  border: 1px solid black;
+
+}
+
+.wave{
+  height: 100px;
+  background-size: cover;
+  background-image: url('../img/wave.svg');
+  opacity: 0.04;
+}
+.wave.upside-down{
+  rotate: 180deg;
+}
+
+/* buttons */
+.btn{
+  color: var(--first-color);
+  background-color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 20px;
+}
+
+.btn:hover{
+  opacity: .8;
+}
+
+.btn.btn-big{
+  padding: 13px 20px;
+  font-size: 1.1rem;
+  border-radius: 30px;
+}
+
+.btn.btn-dark{
+  background-color: var(--first-color);
+  color: white;
+}
+
+.btn.btn-violet{
+  background-color: var(--violet);
+  color: white;
+}
+
+.starred-title{
+  width: 50%;
+  margin: 0 auto 40px auto;
+  padding-top: 40px;
+  background-image: url('../img/stars.svg') ;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+/* texts */
+h1{
+  font-size: 3.5rem;
+}
+h2{
+  font-size: 3rem;
+}
+h3{
+  font-size: 2rem;
+}
+h4{
+  font-size: 1.6rem;
+}
+p{
+  font-size: 1.1rem;
+}
+
+/* HEADER */
+header{
+  padding-top: 95px;
+}
+.topbar{
+  background-color: var(--bg-color);
+  height: 95px;
+  position: fixed;
+  width: 100%;
+  top:0;
+  left:0;
+}
+
+.topbar .container{
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+} 
+
+.topbar .menu{
+  width: 50%;
+}
+
+.topbar .menu ul{
+  justify-content: space-between;
+  
+}
+
+.topbar .menu ul a{
+  color: white;
+  text-decoration: none;
+}
+
+.topbar .menu ul a:hover{
+  text-decoration: underline;
+}
+
+.jumbotron{
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-color);
+  background-image: url('../img/jumbo.png');
+  background-size: cover;
+  background-position: center;
+  height: 630px;
+}
+
+.jumbotron .content{
+  width: 98%;
+  max-width: 800px;
+  color: white;
+  text-align: center;
+}
+
+.jumbotron .content p{
+  line-height: 2rem;
+}
+
+
+/* MAIN */
+main section{
+  padding: 150px 0;
+  
+}
+
+main section .container{
+  
+
+}
+
+main section .container .box-image{
+  width: 60%;
+}
+main section .container .box-text{
+  padding: 40px 0 40px 40px;
+  width: 40%;
+}
+
+#dove  .box-text{
+  padding-left: 0;
+}
+
+#tecnologia .container{
+  text-align: center;
+  flex-direction: column; /* DEBUG */
+  justify-content: space-between; /* DEBUG */
+}
+
+#tecnologia .container p{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* FOOTER */
+footer{
+  padding-top: 80px;
+  background-color: #21272B;
+  color: white;
+}
+
+footer h3,
+footer h4{
+  color: #6C8AE0;;
+}
+
+footer .top{
+  border-bottom: 2px solid #394865;
+  height: 580px; /* DEBUG */
+}
+
+footer .top .lang img{
+  width: 20px;
+  vertical-align: middle;
+}
+footer .top .lang span{
+  font-size: .8rem;
+}
+
+footer .top .container{
+  
+  height: 100%; /* DEBUG */
+}
+
+footer .top .social{
+  width: 25%;
+  padding-right: 40px ;
+}
+footer .social a{
+  color: white;
+  font-size: 1.5rem;
+}
+footer .social-links li{
+  margin-right: 15px ;
+  font-size: .8rem;
+}
+
+footer .top .menues{
+  width: 75%;
+}
+
+footer .top .menues .nav{
+  width: 25%;
+}
+
+footer .top .menues ul{
+  list-style: none;
+}
+footer .top .menues a{
+  color: white;
+  text-decoration:none;
+}
+footer .top .menues a:hover{
+  text-decoration: underline;
+}
+footer .bottom{
+  padding: 30px 0;
+  justify-content: space-between;
+}
